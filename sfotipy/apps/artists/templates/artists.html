@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Artistas</title>
+</head>
+<body>
+
+    Listado de artistas:
+    {% for art in Artists %}
+        <p>
+            {{art}}
+        </p>
+    {% endfor %}
+    <img src="{% static "img/Happy.jpg" %}" alt="" /><br>
+
+</body>
+</html>
